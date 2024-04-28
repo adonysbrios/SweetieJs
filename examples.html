@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sweetie.css">
+    <script src="./sweetie.js"></script>
+    <title>Document</title>
+    <style>
+        body {
+            background: #E5E5E5
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+
+        const callbackAccept = () => {
+            alert("Aceptaste")
+        }
+
+        const callbackCancel = () => {
+            alert("No aceptaste")
+        }
+
+        const promptCallback = (text) => {
+            alert(text)
+        }
+
+
+        simpleAlert({
+            title:'The Leadership of Slight Data', 
+            information:'Doupproaches to the creation of with help of the development methodology must stay true to The Environment of Minor Regulation ',
+            position:'left-top',
+        })
+
+        confirmAlert({
+            title:'The Leadership of Slight Data', 
+            information:'Doupproaches to the creation of with help of the development methodology must stay true to The Environment of Minor Regulation ',
+            position:'right-top',
+            acceptCallback: callbackAccept,
+            cancelCallback: callbackCancel
+        })
+
+        promptAlert({
+            title:'The Leadership of Slight Data', 
+            information:'Doupproaches to the creation of with help of the development methodology must stay true to The Environment of Minor Regulation ',
+            position:'left-bottom',
+            acceptCallback: promptCallback,
+        })
+
+        let n = 1
+
+        addEventListener('DOMContentLoaded', () => {
+            setInterval(()=>{
+                successAlert('Success alert')
+                errorAlert('Error alert')
+                warningAlert('Warning alert')
+            }, 3000)
+        })
+    </script>
+</body>
+</html>
