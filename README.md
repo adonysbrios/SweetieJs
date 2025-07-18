@@ -1,4 +1,7 @@
 # SweetieJS
+
+Antes de que leas nada, [ya existe la etiqueta dialog en html Xd](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog)
+
 SweetieJS es una librería código abierto para la creación de alertas sencillas, llamativas, personalizables y nada molestas para el usuario.
 Cuenta con 3 tipos de alertas personalizables (info, prompt, confirm) y 3 tipos de alertas por defecto (success, warning, error)
 
